@@ -14,7 +14,7 @@ description: ''
 
 A chatbot is an invaluable tool for a growing community. Through this article we will go over how to get started with a powerful chatbot framework called hubot. We will then go over how to write commands and a welcome message tailored to your community. Then, after we have everything just how we want it we will add our bot to a slack workspace and deploy it to Heroku. This is written with a beginner in mind so if you are unfamiliar with any of this technology we will be going over it in a way that has a total beginner in mind.
 
-You will need to begin by installing node.js if you have not. You can find the file here [https://nodejs.org/en/download/](https://nodejs.org/en/download/). Once you have node installed you will need npm, you can open your terminal and type `npm install install` to get npm. The last thing you will need to install is a package called yo which is used to create a hubot. You will need to run `npm install -g yo generator-hubot` for this. You can learn more about "yo" here [https://yeoman.io/](https://yeoman.io/). Now that we have our requirements installed we are ready to begin.
+You will need to begin by installing node.js if you have not. You can find the file [here](https://nodejs.org/en/download/). Once you have node installed you will need npm, you can open your terminal and type `npm install install` to get npm. The last thing you will need to install is a package called yo which is used to create a hubot. You will need to run `npm install -g yo generator-hubot` for this. You can learn more about "yo" [here](https://yeoman.io/). Now that we have our requirements installed we are ready to begin.
 
 ![](/media/Screen_Shot_2019-03-26_at_7-84e55fe7-ac00-463f-a02c-197765cdf352.40.45_AM.png)
 
@@ -24,7 +24,7 @@ Once we have this open in our text editor we should see a folder structure like 
 
 ![](/media/Screen_Shot_2019-03-26_at_2-fdd3b784-cafc-4b10-a905-7504753781a8.32.30_PM.png)
 
-If you view the [README.md](http://readme.md) you will find information on getting the bot started and helpful tips and resources.
+If you view the README.md you will find information on getting the bot started and helpful tips and resources.
 
 For the purposes of this guide we will be working in the `scripts` folder. You can refer to the hubot docs for clarification on the other files. [https://hubot.github.com/docs/](https://hubot.github.com/docs/)
 
@@ -245,7 +245,7 @@ To deploy your bot, you will need a Heroku account. There are other options, but
 
 Once this is installed you will be able to open a terminal in your root project directory and type `heroku login` . This will take you through a login process to use the CLI tools.
 
-Once this is complete you will need git in your project. Use `git init` then you can `git add .` and `git commit -m "initial commit"` . You will need to create a repo on github for the bot then you can use `git remote add origin [https://github.com/Dstar4/example.git](https://github.com/Dstar4/example.git)` to set this as the project repository. From here you can `git push origin master` .
+Once this is complete you will need git in your project. Use `git init` then you can `git add .` and `git commit -m "initial commit"` . You will need to create a repo on github for the bot then you can use `git remote add origin https://github.com/Dstar4/example.git` to set this as the project repository. From here you can `git push origin master` .
 
 Next we will want to push our project to Heroku. To do this we will need to set our api key for slack into our Heroku config.
 
