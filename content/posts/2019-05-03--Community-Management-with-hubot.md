@@ -4,11 +4,11 @@ date: '2019-04-03T22:12:03.284Z'
 template: 'post'
 draft: false
 slug: '/posts/community-management-with-hubot'
-category: 'Typography'
+category: 'Community'
 tags:
   - 'Open source'
-  - 'Gatsby'
-  - 'Typography'
+  - 'Online Community'
+  - 'Onboarding'
 description: ''
 ---
 

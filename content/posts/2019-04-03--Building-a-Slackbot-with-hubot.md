@@ -4,11 +4,11 @@ date: '2019-04-03T22:12:03.284Z'
 template: 'post'
 draft: false
 slug: '/posts/building-a-slackbot-with-hubot'
-category: 'Typography'
+category: 'Tutorials'
 tags:
   - 'Open source'
-  - 'Gatsby'
-  - 'Typography'
+  - 'hubot'
+  - 'chatbot'
 description: ''
 ---
 
