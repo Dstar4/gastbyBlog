@@ -182,11 +182,15 @@ Here we see a something new `res.reply`. This is like `res.send` but it replies 
 
 To test this behavior it will be best to create our own slack workspace to test our bot out. You will need to start by going to [https://slack.com/](https://slack.com/) and creating a new workspace. Once you have a workspace you can go into your administration settings, and search the app directory for hubot. This will allow you get generate an api key for your slack to use with your hubot. You can find an in-depth guide for this process here [https://slack.dev/hubot-slack/](https://slack.dev/hubot-slack/).
 
-One we have the api key we can pass it to our bot. We do this in our terminal while starting the bot. `HUBOT_SLACK_TOKEN=PASTE_YOUR_SLACK_TOKEN_HERE ./bin/hubot --adapter slack`
+One we have the api key we can pass it to our bot. We do this in our terminal while starting the bot.
+
+    HUBOT_SLACK_TOKEN=PASTE_YOUR_SLACK_TOKEN_HERE ./bin/hubot --adapter slack
 
 You should see your bot come online in your slack workspace, try messaging it and say "hello" you should see a reply of "Hello World." Lets try our enter command. Create a channel name onboarding and use `/invite @botname` . This will add the bot to the channel. Now you can leave the channel and rejoin. If everything is working you should be greeted with "Hello and Welcome". Great! We are almost there.
 
-Next we will need to isolate this message to only be triggered in the onboarding channel, and turn the message into a private direct message. To do this we will need the room id. This is a code assigned to every slack channel. You can find it on your url. Navigate to the channel you want the bot in and look at your url. It will look similar to this. [`https://dstarlingdevelopment.slack.com/messages/CGMQQ9GSG/`](https://dstarlingdevelopment.slack.com/messages/CGMQQ9GSG/). What we need is the code between the last slashes `CGMQQ9GSG`. We will add this to to our [`welcome.coffee`](http://welcome.coffee) file to isolate this trigger to the #onboarding channel.
+Next we will need to isolate this message to only be triggered in the onboarding channel, and turn the message into a private direct message. To do this we will need the room id. This is a code assigned to every slack channel. You can find it on your url. Navigate to the channel you want the bot in and look at your url. It will look similar to this. `https://your-workspace-name.slack.com/messages/CGMQQ9GSG/`
+
+What we need is the code between the last slashes `CGMQQ9GSG`. We will add this to to our [`welcome.coffee`](http://welcome.coffee) file to isolate this trigger to the #onboarding channel.
 
     module.exports = (robot) ->
       conversationId = "CGMQQ9GSG"
