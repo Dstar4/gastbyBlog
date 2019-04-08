@@ -12,5 +12,4 @@ const Layout = ({ children, title, description }) => (
     {children}
   </div>
 );
-
 export default Layout;
