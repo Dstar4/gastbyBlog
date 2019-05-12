@@ -85,7 +85,7 @@ $ npm run serve
 ```
 
 ## Folder Structure
-
+updated
 ```
 └── content
     ├── pages
